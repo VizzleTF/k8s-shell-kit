@@ -93,6 +93,7 @@ kube-system    └─Pod/coredns-f98564579-tl589      True           Current  2d
 | `kubectl diff` | Показывает, что изменит `apply`: изменённые пути YAML со старым и новым значением (`dyff`). Код возврата 0 без различий, 1 при различиях | `kubectl diff -f foo.yaml` |
 | `ked`, `kesvc`, `kests`, `kei`, `kecm`, `kesec`, `kecert`, `kepv`, `kepvc`, `keditj`, `keditcj` | `kubectl edit` для deployment, service, statefulset, ingress, configmap, secret, certificates, pv, pvc, job, cronjob | `ked api` |
 | `kdel`, `kdelp`, `kdeld`, `kdelrs`, `kdelsvc`, `kdeli`, `kdelcm`, `kdelsec`, `kdelcert`, `kdelpv`, `kdelpvc`, `kdelj`, `kdelcj`, `kdelns` | `kubectl delete` для ресурса; удаляет без подтверждения | `kdelp api-7d9f-x2k` |
+| `kdelpf` | `kubectl delete pod --force`: удаляет под, не дожидаясь подтверждения завершения от kubelet | `kdelpf api-7d9f-x2k` |
 
 ### Нагрузка
 

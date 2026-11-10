@@ -138,6 +138,7 @@ if command -v kubectl > /dev/null 2>&1; then
     }
     kcompdef kdsec kubectl get secret
     alias kdelp='kubectl delete pod'
+    alias kdelpf='kubectl delete pod --force'
     alias kdeld='kubectl delete deployment'
     alias kdelrs='kubectl delete replicasets'
     alias kdeli='kubectl delete ingress'

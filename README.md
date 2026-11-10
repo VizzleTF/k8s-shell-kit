@@ -93,6 +93,7 @@ These apply to every command:
 | `kubectl diff` | Shows what `apply` would change: each changed YAML path with its old and new value (`dyff`). Exits 0 with no differences, 1 with differences | `kubectl diff -f foo.yaml` |
 | `ked`, `kesvc`, `kests`, `kei`, `kecm`, `kesec`, `kecert`, `kepv`, `kepvc`, `keditj`, `keditcj` | `kubectl edit` for deployment, service, statefulset, ingress, configmap, secret, certificates, pv, pvc, job, cronjob | `ked api` |
 | `kdel`, `kdelp`, `kdeld`, `kdelrs`, `kdelsvc`, `kdeli`, `kdelcm`, `kdelsec`, `kdelcert`, `kdelpv`, `kdelpvc`, `kdelj`, `kdelcj`, `kdelns` | `kubectl delete` for the resource; deletes without confirmation | `kdelp api-7d9f-x2k` |
+| `kdelpf` | `kubectl delete pod --force`: deletes the pod without waiting for the kubelet to confirm termination | `kdelpf api-7d9f-x2k` |
 
 ### Resource usage
 
